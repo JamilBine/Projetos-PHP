@@ -1,0 +1,101 @@
+body {
+	background-color:#696969; 
+	font-size:12px; 
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#background{
+	background-image:url(logo.png);
+	background-size: 100% 100%;
+	height:150;
+}
+
+#menu {
+	margin-left:25%;
+	margin-right:25%;
+	float: center;
+	text-align:center;
+}
+
+#menu input { 
+	display: inline-block;
+        list-style-type: none;
+	width: 150px;
+	padding: 1px; 
+	border:1px solid #FFFFFF; 
+	display:block; 
+	background: #99CCCC; 
+	text-decoration:none;
+}
+
+#menu input:hover { 
+	width: 151px;
+	padding: 1px; 
+	border:1px solid #0099CC; 
+	display:block; 
+	background:#eee; 
+	text-decoration:none;
+}
+
+#menu li {
+	float:left;
+	display:block;
+	list-style-image: none;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#conteudo {
+	margin-left:230px; 
+	margin-right:15%;
+}
+
+a.tooltip{
+	position:relative; 
+	font-size:12px; 
+	color:#039;
+	text-decoration:none;
+	cursor:help;
+	top:3px;
+	margin-left:3px;
+}
+
+a.tooltip:hover{
+	background:transparent;
+	color:#f00;
+	z-index:25; 
+}
+a.tooltip span{
+	display: none
+}
+  
+a.tooltip:hover span{ 
+	display:block;
+	position:absolute;
+	width:210px; 
+	top:20px;
+	left:0;
+	font-size: 12px;
+	padding:5px;
+	border:1px solid #999;
+	background:#e0ffff; 
+	color:#000;
+}
+
+#resultados{
+	width: 40%;
+	border: 1px solid #c30;
+}
+
+#pesquisar{
+	background: #EAEAAE;
+}
+
+.tabela tr td{
+	border: 1px solid #c30;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 15px;
+	width: 50%;
+}
