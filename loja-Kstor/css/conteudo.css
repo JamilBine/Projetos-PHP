@@ -1,0 +1,13 @@
+#geral_conteudo{ margin: 0 auto; width:900px; height:300px; /*border:#FF0000 1px solid;*/ margin-top:10px;}
+
+#box_left { width:200px; height:280px; /*border:#FF0000 1px solid;*/ float:left; margin: 10px 0px 0px 10px; text-align:left;}
+
+#box_right { width:665px; height:480px; /*border:#FF0000 1px solid;*/ float:left; margin: 10px 0px 0px 10px; text-align:justify; overflow:auto; }
+
+li { list-style:none; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:18px; padding:0px 0px 1px 15px;}
+
+li a:hover { background:#000097; color:#FFFFFF;}
+
+li a { text-decoration:none; color:#000097; display:block;}
+
+#box_right h2 { text-align:center;}

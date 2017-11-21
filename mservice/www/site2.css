@@ -1,0 +1,272 @@
+@font-face {
+    font-family: MyriadPro;
+    src: url("/fonts/MyriadPro-Regular.otf");
+}
+
+body {margin-left: 0px;	margin-top: 0px; margin-right: 0px;	margin-bottom: 0px; font-size: 62.5% !important}
+.container {width:61.85%; margin:0 auto} /* 1350px */
+
+
+.barra_titulo {width:100%; border-bottom:1px solid #c0c0c0; padding-bottom:0.9%; margin-bottom:1.5%}
+.menu_topo {font-size:1.6em; float:left; margin-top:1.11%; font-family:MyriadPro, sans-serif; width:50%}
+.menu_topo a {color:#4d4d4d; text-decoration:none; padding-right:1.11%; margin-right:1.11%; border-right: 0.0625em #c0c0c0 solid}
+.menu_topo a:hover {color:#000; text-decoration:underline}
+.compre_telefone {float:right; font-size:2em; color:#4d4d4d; margin-top:1.11%; font-family:MyriadPro, sans-serif}
+.compre_telefone strong {color:#0293c2}
+.logo {float:left; width:16.7%; height:auto; margin-right:10%}
+.logo img {width:100%; height:auto}
+
+.busca {float:left; width:38%; margin-top:1.2%; font-family:MyriadPro, sans-serif}
+.busca input[type="text"]{border:1px #4e4e4e solid; float:left; height:1.7em; width:75%; font-size:2em; padding-left:3%}
+.busca input[type="submit"]{background-color:#0293c2; color:#FFF; text-transform:uppercase; border:0; margin-left:-1px; width:20%; height:2.85em}
+
+.carrinho {float:right; font-family:MyriadPro, sans-serif; width:27%; color:#4d4d4d}
+.carrinho div {margin-top:5%; float:left}
+.carrinho a {font-size:1.3em; color:#4d4d4d; text-decoration:none}
+.carrinho a:hover {text-decoration:underline; color:#000}
+a.bt_carrinho_compras {background:url(img/bt_carrinho.png) 0.5em 0.5em no-repeat; padding-left: 22%; padding-right:5%; height:2.9em; display:block; text-decoration:none; float:right; margin-left:1%; padding-top:5%; border:1px solid #4d4d4d}
+a.bt_carrinho_compras span {display:block; font-size:80%}
+a.bt_remove_carrinho_compras {background:url(img/remove_carrinho.png) center no-repeat; background-size:contain; width:2em; height:1.8em; display:block}
+
+.menu_principal {position:absolute; background:#000; margin-top:-0.6%; font-family:MyriadPro, sans-serif; width:22%; font-size: 100% !important}
+.menu_principal ul {padding:0; margin:0; list-style:none; width:100%}
+.menu_principal ul li div {font-size:2.1em; color:#FFF; text-transform:uppercase; text-decoration:none; padding-left:10%; background:url(img/menu_principal.png) no-repeat right; background-size: 12% 70%;  width:85%;  margin-top:-1.8%; padding-top:3.5%; padding-bottom:3.5%;}
+.menu_principal ul li a {font-size:2.4em; color:#FFF; text-transform:uppercase; text-decoration:none; padding-left:10%; background:url(img/seta_menu.png) no-repeat right; background-size: 6% 58%; width:80%; display:block; padding-bottom:4%; padding-top:4%}
+.menu_principal ul li a:hover {color:#C60}
+.menu_principal li:nth-child(odd) {background-color:#363636}
+.menu_principal li:nth-child(even) {background-color:#4d4d4d}
+.menu_principal li ul {display: none; left:90%; position:absolute; margin-top:-15%; background-color:#f1ebe1 !important; padding:5% !important; opacity:0.9; -moz-opacity: 0.9; filter: alpha(opacity=90)}
+.menu_principal li ul li {display: block; float: left; background-color:transparent !important; width:50%}
+.menu_principal li ul li a {width: auto; color:#4d4d4d !important; background-image:none !important; font-size:1.7em !important; padding:2% !important; text-transform:none !important}
+.menu_principal li ul li a:hover {color:#FFF !important; background-color:#C60 !important}
+.menu_principal ul li a:hover + .hidden, .hidden:hover {display: block;}
+
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {display: none}
+.menu_secundaria {font-family:MyriadPro, sans-serif; width:100%; background-color:#363636; height:4.1em; position: absolute; top:22.5%}
+.menu_secundaria input[type=checkbox] {display: none; -webkit-appearance: none;}
+/*Show menu when invisible checkbox is checked*/
+.menu_secundaria input[type=checkbox]:checked ~ #menu{display: block;}
+.menu_secundaria ul {list-style-type:none;margin:0;padding:0; position: absolute; width:65%}
+.menu_secundaria li {display:inline-block; float: left;	width:16.66%; text-align:center; padding-bottom:1%;	padding-top:1%;}
+.menu_secundaria li:nth-child(odd) {background-color:#363636}
+.menu_secundaria li:nth-child(even) {background-color:#4d4d4d}
+.menu_secundaria li a {font-size:1.6em; color:#FFF; text-transform:uppercase; text-decoration:none}
+.menu_secundaria li:hover a {color:#C60}
+.menu_secundaria li:hover ul a {color: #FFF;}
+.menu_secundaria li:hover ul a:hover {color: #FC0 }
+.menu_secundaria li ul {display: none; margin-top:0%; width:16%; padding-bottom:5%}
+.menu_secundaria li ul li {display: block; float: none; background-color:#363636 !important; text-align:left; padding-left:5%; width:100%; padding-top:8%; padding-bottom:2%}
+.menu_secundaria li ul li a {width: auto; color:#FFF !important; font-size:1.4em; text-transform:none !important}
+.menu_secundaria li ul li a:hover {color:#C60 !important}
+.menu_secundaria ul li a:hover + .hidden, .hidden:hover {display: block;}
+.categorias {margin-top:5%}
+
+@media screen and (max-width: 1280px) { 
+.container {width:95%; margin:0 auto}
+.menu_secundaria ul {width:95%}
+.categorias {margin-top:6.8%}
+.menu_secundaria {height:3.9em !important;}
+.menu_secundaria {height:4.3em !important; top:27% !important}
+}
+
+@media screen and (min-width:1281px and max-width: 1400px ) { 
+.container {width:85%; margin:0 auto}
+.menu_secundaria ul {width:85%}
+.categorias {margin-top:5.8%}
+.menu_secundaria {height:4.3em !important; top:25.5% !important}
+}
+
+.slideshow {z-index:-10}
+.banner {margin-top:3.71%; margin-bottom:2.23%; text-align:center; z-index:-1}
+.banner img {max-width:100%; height:auto}
+.produtos {width:100%; font-family:MyriadPro, sans-serif}
+.produtos h3 {color:#4e4d4d; font-size:3.71em; letter-spacing:-0.05em}
+.produtos ul {width:100%; margin:0; padding:0; list-style:none; position:relative}
+.produtos ul li {float:left; width:25%; padding-bottom:2.5%; padding-top:1.25%; margin-top:1.25%; text-align:center; height:40em; position:relative}
+.produtos ul li img {width:auto; height:40%; display:block; margin:0 auto; padding-bottom:2.6em}
+.produtosxxx ul li:hover {background-color:#E5E5E5}
+.produtos ul li:hover img {opacity:0.7; -moz-opacity: 0.7; filter: alpha(opacity=70)}
+.produtos ul li:hover a {visibility:visible}
+
+.produtos_lista {width:100%; font-family:MyriadPro, sans-serif; font-size:150% !important}
+.produtos_lista h3 {color:#4e4d4d; font-size:5.71em; letter-spacing:-0.05em}
+.produtos_lista div {float:left}
+.produtos_lista ul {width:100%; margin:0; padding:0; list-style:none}
+.produtos_lista ul li {width:100%; padding-bottom:2.5%; padding-top:1.25%; margin-top:1.25%; text-align:center; height:14em; display:block}
+.produtos_lista ul li img {width:28%; height:auto; max-height:13em; float:left; margin-left:5%}
+.produtos_listaxxx ul li:hover {background-color:#E5E5E5}
+.produtos_lista ul li:hover img {opacity:0.7; -moz-opacity: 0.7; filter: alpha(opacity=70)}
+.produtos_lista ul li:hover a {visibility:visible}
+
+.descricao_produto {width:65%; margin:0 auto; text-align:left}
+.valor_produto {font-size:1.7em; color:#ff5a00; font-weight:bold; display:block; padding-top:3%}
+.parcelas_produto {font-size:1.1em; color:#191a1f; font-weight:400; display:block; padding-bottom:3%; padding-top:1.5%}
+a.titulo_produto {font-size:1.3em; color:#0c0c0c; font-weight:400; text-decoration:none; display:block; margin-bottom:1.11%}
+a.titulo_produto:hover {color:#000}
+a.bt_comprar {background:url(img/bt_comprar.png) no-repeat 5px 5px #ff4e00; padding-left:60px; padding-top:10px; color:#FFF; text-decoration:none; font-size:2.3em; display:block; height:38px; width:55%; padding-right:20px; visibility:hidden}
+a.bt_comprar_home {background:url(img/bt_comprar.png) no-repeat 5px 5px #ff4e00; padding-left:60px; padding-top:10px; color:#FFF; text-decoration:none; font-size:2.3em; display:block; height:38px; width:55%; padding-right:20px; position:absolute; bottom:8%}
+a.bt_comprar_home:hover {background-color:#333}
+.destaques {width:100%; clear:both; margin-top:2%; margin-bottom:2%}
+.destaques ul {width:100%; margin:0; padding:0; list-style:none}
+.destaques ul li {float:left; text-align:center; width:33%}
+.destaques ul li img {width:85.33%; height:auto}
+
+#rodape {clear:both; background:#000; width:100%; margin-top:2%; color:#FFF; padding-top:2%; padding-bottom:3%; font-family:MyriadPro, sans-serif}
+#rodape h1{font-size: 1.600em; font-family:MyriadPro, sans-serif;}
+#rodape span {float:left; margin-right:4%; font-size:1.1em; color:#FFF}
+#rodape span b {font-size:1.250em; display:block; margin-bottom:5%}
+#rodape span a {display:block; padding:1%; color:#FFF; font-size: 0.775em; text-decoration:none; margin-bottom:3%}
+#rodape span a:hover {text-decoration:underline}
+
+.receba_novidades {width:100%; text-align:center; margin-bottom:5%; }
+.receba_novidades label {font-size:2.5em !important; font-weight:400 !important}
+.receba_novidades input[type="text"]{border:1px #4e4e4e solid; width:25%; font-size:1.5em; padding-left:0.5%; padding-bottom:0.5%; padding-top:0.5%}
+.receba_novidades input[type="submit"]{background-color:#0293c2; color:#FFF; border:0; margin-left:-1px; width:10%; font-size:1.5em; padding-bottom:0.5%; padding-top:0.5%; padding-left:0.6%; padding-right:0.5%}
+
+.produtos_categoria {width:80%; float:right}
+
+.menu_produtos_categoria {width:18%; float:left; margin-top:2.5%; font-family:MyriadPro, sans-serif}
+.menu_produtos_categoria {width:18%; float:left; margin-top:2.5%; font-family:MyriadPro, sans-serif}
+.menu_produtos_categoria a {color:#7e7e7e; font-size:1.2em; text-decoration:none}
+.menu_produtos_categoria a:hover {color:#ff4e00; text-decoration:underline}
+.menu_produtos_categoria h3 {color:#ff4e00; text-transform:uppercase; font-size:2em; padding:0; margin:0}
+.menu_produtos_categoria ul {margin:0; padding:0; list-style:none}
+.menu_produtos_categoria ul li a {font-size:1.4em !important; padding-top: 2.5%; padding-bottom:2.5%; display:block}
+.menu_produtos_categoria label {display: inline-block; cursor: pointer; position: relative; padding-left: 2%; font-size: 1.2em; margin-bottom: 2%;color: #7e7e7e}
+.menu_produtos_categoria input[type=checkbox] {border-color:#7e7e7e}
+.menu_produtos_categoria input[type=checkbox]:checked + label:before {color:#ff4e00}
+.item_menu_produtos {margin-left:5%; margin-bottom:15%}
+
+.titulo_pg_categoria {margin-top:5%; color:#7e7e7e; font-family:MyriadPro, sans-serif; width:100%; border-bottom:#7e7e7e 1px solid; padding-bottom:1%}
+.paginacao {font-size:2.2em; font-family:MyriadPro, sans-serif; width:auto; float:left}
+.paginacao b {color:#C60}
+.paginacao a {color:#7e7e7e; text-decoration:none}
+.paginacao a:hover {color:#ff4e00; text-decoration:underline}
+
+.links {float:right; width:auto; list-style:none; font-family:MyriadPro, sans-serif; color:#7e7e7e;}
+.links li {float:left; font-size:1.3em; vertical-align:middle; text-align:right}
+.links img {vertical-align:middle; width:15%; height:auto; margin-right:7%}
+.links a {color:#7e7e7e; text-decoration:none}
+.links a:hover{text-decoration:underline}
+
+
+.detalhes_produto {width:100%; font-family: MyriadPro, sans-serif; margin-top:12%}
+.detalhes_produto h1 {color:#4e4d4d; font-size:3.39em; padding:0; margin:0}
+.item_menu_detalhes_produto {width:100%; margin-bottom:3%; padding-bottom:1%; border-bottom:#CCC 1px solid}
+.item_menu_detalhes_produto a {color:#7e7e7e; font-size:1.7em; text-decoration:none}
+.item_menu_detalhes_produto a:hover {color:#000; text-decoration:underline}
+.fotos_produto {float:left; margin-right:5%; width:40%}
+.destaque_destalhes_produto {float:left; width:55%}
+.especificacao_produto {color:#5f5f5f; line-height:1.5em; font-size:1.4em; padding-bottom:1.5%; margin-bottom:2%; border-bottom:#CCC 1px solid; padding-top:2%}
+.especificacao_produto h2 {color:#048eb6; font-size:1em; border-bottom:1px solid #CCC; padding-bottom:1.5%}
+.produto_por {display:block; font-size:3.73em; color:#ff4e00; font-weight:bold; margin-top:2%}
+.produto_por_parcelas {display:block; color:#282828; font-size:1.46em; letter-spacing:0.06em}
+.produto_ou {color:#282828; font-size:2.3em; font-weight:bold; display:block; margin-top:3%; margin-bottom:2.5%}
+.produto_por2 {display:block; font-size:1.5em; color:#282828}
+.produto_por2 b {font-size:1.8em; color:#ff4e00; font-weight:bold}
+.frmFrete_Produto {display:block; margin-bottom:8%; margin-top:5%}
+.frmFrete_Produto label {color:#282828; font-size:1.2em; float:left; font-weight:bold}
+.frmFrete_Produto input[type=text] {border:#999 1px solid; padding:0.8%; font-size:1.5em; width:30%; margin-right:2%; padding-left:2%}
+.frmFrete_Produto input[type=submit] {background-color:#282828; color:#FFF; border:0; padding:1%; font-size:1.5em}
+a.bt_comprar_produto {background-color:#ff4e00; border-radius:5px; padding:2%; font-size:2.7em; font-weight:bold; color:#FFF; text-decoration:none; margin-right:3%}
+a.bt_comprar_produto:hover {background-color:#333}
+
+.topo_pagamento {width:100%; height:120px; border-bottom: 2px solid #464646; background:url(img/topo_pagamento.png) no-repeat center; margin-bottom:25px}
+.topo_carrinho {width:100%; height:120px; border-bottom: 2px solid #464646; background:url(img/topo_carrinho_compras.png) no-repeat center; margin-bottom:25px}
+.pg_carrinhodecompras {width:100%; margin-top:120px; font-family:MyriadPro, sans-serif;}
+.pg_carrinhodecompras table {width:100%; -moz-border-radius:7px;-webkit-border-radius:7px; border-radius:7px; text-align:center; border:1px solid #ff4e00}
+.pg_carrinhodecompras table th {background-color:#ff4e00; color:#FFF; font-size:1.5em; padding-bottom:1.5%; padding-top:1.5%}
+.pg_carrinhodecompras table td {padding-bottom:1.5%; padding-top:1.5%; color:#2a2a2a}
+.pg_carrinhodecompras table td span {font-size:2em}
+.pg_carrinhodecompras table td b {font-size:2.7em}
+.pg_carrinhodecompras table td a {color:#2a2a2a; text-decoration:none; font-size:1.57em !important; display:block}
+.pg_carrinhodecompras table td a:hover {color:#000}
+.pg_carrinhodecompras table img {width:35% !important; height:auto}
+
+a.bt_continuar_comprando {color:#FFF; text-decoration:none; font-size:1.3em; padding:0.5em; background-color:#333 }
+a.bt_continuar_comprando:hover {background-color:#039}
+
+.calcular_frete_carrinho {width:35%; float:left; color:#2a2a2a; margin-top:2%; padding:2%; font-size:1.2em}
+.calcular_frete_carrinho form {text-align:left}
+
+.fechar_pedido {font-family: MyriadPro, sans-serif; font-size:1.2em; color:#333;}
+.fechar_pedido h3 {background-color:#ff4e00; color:#FFF; padding:3%;  margin-bottom:5%; margin-top:-0.2%; clear:both; -moz-border-radius:3px;-webkit-border-radius:3px; border-radius:3px}
+.fechar_pedido input{border-radius:5px; border:1px solid #818181; height: 35px;}
+.fechar_pedido select, .fechar_pedido input[type="date"], .fechar_pedido input[type="text"], .fechar_pedido input[type="password"] {width:95%; padding-left:2%; font-size:1.5em; margin-bottom:3%}
+.fechar_pedido input[type="submit"] {color:#FFF; font-size:2em; font-weight:bold; background-color:#ff4e00; border:0; moz-border-radius:3px;-webkit-border-radius:3px; border-radius:3px; width: 100%; height: 25%}
+.fechar_pedido label {margin-bottom:1%;}
+.fechar_pedido select{background:url(img/seta.png) no-repeat right; overflow: hidden; width: 168px; font-size: 16px; line-height: 1; border:1px solid #818181; border-radius:5px; height: 34px; -webkit-appearance: none; -moz-appearance: none; appearance:none;}
+
+
+#nav {top:540px; left:50%; z-index:10; position:absolute; margin-left:400px}
+#nav a {float:left; background-color:#D3D3D3; width:20px; height:20px; margin:5px; display:block; -moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+#nav a.activeLI {background: #F33; border:#F33 1px solid } 
+
+.window {display:none; position:absolute; left:0; top:0; background:#FFF; z-index:9900; border-radius:5px; font-size:1.8em; font-family:Arial, Helvetica, sans-serif; border:1px solid #818181}
+.titulo_window {background-color:#0293c2; color:#FFF; font-size:2em; padding-top:5%; padding-bottom:5%; padding-left:5%; width:95%; border-bottom: 3px solid #0c83aa; margin-bottom:2%; margin-bottom: 10%;}
+.window form input {border-radius:5px; border:1px solid #818181; margin-left: 10px; height: 35px;}
+.window form p {margin-left:15%; padding-bottom:1%; font-size:0.9em;}
+.window form p input {float: right; border-radius:5px; border:1px solid #818181; height: 35px; text-align: left; margin-right: 15%; margin-top:-8px;}
+.window form select {float: right; margin-right: 15%; background:url(img/seta.png) no-repeat right; overflow: hidden; width: 168px; margin-top:-8px; font-size: 16px; line-height: 1; border:1px solid #818181; border-radius:5px; height: 34px; -webkit-appearance: none; -moz-appearance: none; appearance:none;}
+.window form input[type="submit"]{background-color:#ff4e00; color:#FFF; border:0; font-size:0.8em; padding-bottom:0.5em; padding-top:0.5em; padding-left:1.5em; padding-right:1.5em; font-weight:bold; margin-left: 17%; width:35%;}
+.window form span{display: inline-block; cursor: pointer; position: relative; padding-left: 25px; margin-right: 15px; font-size: 13px;}
+.window form input[type="radio"]{opacity: 0; margin-right: -12px; cursor: pointer; width: 12px; height: 12px;}
+.window form input[type="radio"] + span:before {
+    content: "";
+    display: inline-block;
+ 
+    width: 16px;
+    height: 16px;
+  
+    border-radius:50%;
+ 
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #FFF;
+    box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.window form input[type=radio]:checked + span:before{content: "\2022"; background-color: #ff4e00;}
+.linha_form {display:block; margin-bottom:4%; font-size:0.9em; padding-left: 30%;}
+.linha_form a {color:#979797; text-decoration:none; border-bottom:1px #979797 dotted; font-size:0.7em; margin-left: 17%;}
+
+#mascara {position:absolute; left:0; top:0; z-index:9000; background-color:#000; display:none;}
+.bt_fechar{float:right; position:absolute; top:1%; left:85%}
+
+
+/* max device width */ 
+@media screen and (max-width: 480px) { 
+	.container {width:100%}
+	.barra_titulo, .menu_topo, .banner, .menu_principal, .destaques, .menu_produtos_categoria, .links {display:none; -webkit-appearance: none;}
+	
+	.logo {float:none !important; width:100% !important; background-color:#232323; margin:0 !important; padding-bottom:3%; padding-top:3%; text-align:center;}
+	.logo img {width:40% !important; height:auto; z-index:100}
+	.busca {width:95% !important; float:none !important; padding-top:3% !important; margin:0 auto !important; padding-bottom:3%} 
+	.carrinho {width:95%; float:none; margin:0 auto !important;}
+	.carrinho div {margin-top:5%; float:left}
+	.carrinho2 a {font-size:1.3em; color:#4d4d4d; text-decoration:none}
+	.carrinho2 a:hover {text-decoration:underline; color:#000}
+	a.bt_carrinho_compras {border:1px solid #333}
+	.produtos li {float:none !important; text-align:center; width:100% !important}
+	.produtos li img, .produtos_categoria img {width:50% !important}
+	a.bt_comprar {visibility:visible !important}
+	#rodape span {float:none !important; display:block; margin-bottom: 5%; text-align:center}
+	.produtos_categoria {width:100%; float:none}
+	.fotos_produto {display:block; float:none; margin:0; width:100%}
+	.destaque_destalhes_produto {float:none; width:100%}
+	.menu_secundaria {width:90%; position:absolute; left:5%; top:2%; z-index:1}
+	.menu_secundaria img {width:16%; height:auto}
+	/*Make dropdown links appear inline*/
+	.menu_secundaria ul {position: static;	display: none; margin-top:3%}
+	/*Create vertical spacing*/
+	.menu_secundaria li { padding-bottom:5%; padding-top:5%; opacity: 0.9; filter: alpha(opacity=90); /* For IE8 and earlier */}
+	/*Make all menu links full width*/
+	.menu_secundaria ul li, li a {width: 100%;}
+	/*Display 'show menu' link*/
+	.menu_secundaria .show-menu {display:block;}
+	
+}

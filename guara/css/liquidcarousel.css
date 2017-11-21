@@ -1,0 +1,29 @@
+.liquid {
+	width: 830px;
+	height: 90px;
+}
+.liquid .previous {
+	display:block;
+	height:26px;
+	width:60px;
+	background-image:url('../img/ant.jpg');
+	float:left;
+	margin:0;
+	padding:0;
+}
+.liquid .next {
+	display:block;
+	height:26px;
+	width:60px;
+	background-image:url('../img/prox.jpg');
+	float:right;
+	margin:0;
+	padding:0;
+}
+.liquid ul li {
+	width:87px;
+	padding:0 2px;
+	margin:0;
+	list-style-type: none;
+	display: inline;
+}

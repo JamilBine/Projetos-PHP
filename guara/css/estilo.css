@@ -1,0 +1,239 @@
+/* CSS Document */
+body{
+	margin-bottom: 0px; 
+	margin-left: 0px; 
+	margin-right: 0px; 
+	margin-top: 0px;
+}
+
+.topo{
+	background:url(../img/topo2.jpg) center no-repeat;
+	width: 100%;
+	height: 672px;
+}
+
+a.link{
+	width:240px; 
+	height:25px; 
+	display:block; 
+	position:absolute; 
+	left:50%; 
+	margin-left: 230px;
+	margin-top: 0px;
+}
+
+.topo h1{
+	margin-top: 630px;
+	margin-left: 15%;
+	position: absolute;
+	font-family: 'Raleway', sans-serif;
+	color: #c3bbaf;
+}
+
+.logo{
+	background: url(img/logo.png);
+	width: 158px;
+	height: 146px;
+	margin-left: 200px;
+	margin-top: 8px;
+	position:absolute;
+}
+
+.menu_topo {
+	width:780px; 
+	margin-top:65px; 
+	font-size:12px; 
+	color:#c1a048; 
+	text-transform:uppercase; 
+	position:absolute; 
+	left:50%; 
+	margin-left:-280px;
+	font-family: 'Ruleway', sans-serif;
+}
+
+.menu_topo a {
+	text-decoration:none; 
+	color:#030303; 
+	font-weight:bold; 
+	padding:1px;
+}
+
+.menu_topo a:hover{
+	color:#bd9f12; 
+	border-bottom: 2px solid #bd9f12;
+}
+
+.menu_topo a:visited{
+	text-decoration:none;
+}
+
+.home {
+	width:100%; 
+	margin-bottom:30px; 
+	margin-top:-70px;
+}
+
+.home h1{
+	font-size:23px; 
+	color:#a69a87; 
+	text-align:left;
+	position:absolute;
+}
+
+.info {
+	width:80%; 
+	margin-top:50px; 
+	height:450px;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.info ul {
+	margin:0; 
+	padding:0; 
+	list-style:none;
+}
+
+.info ul li {
+	float:left; 
+	width:220px; 
+	height:450px; 
+	margin-right:20px; 
+	text-align:left; 
+	color:#6c6c6c; 
+	font-size:12px; 
+	font-family: 'Raleway', sans-serif; 
+	line-height:20px;
+}
+
+.info ul li h2 {
+	color:#a47e3f; 
+	font-size:21px; 
+	border-bottom:1px solid #b0b0b0; 
+	margin:0; 
+	padding:0; 
+	padding-bottom:10px; 
+	margin-bottom:10px; 
+	text-transform:uppercase; 
+	line-height:26px;
+}
+
+.info a:visited{
+	text-decoration: none;
+}
+
+.footer {
+	width:100%; 
+	height:388px; 
+	background:url(../img/footer.jpg) center no-repeat; 
+	font-family: 'Raleway', sans-serif;
+	margin-top: 75px;
+}
+
+.footer ul {
+	width:740px; 
+	left:50%; 
+	margin-left:-505px; 
+	position:absolute; 
+	list-style:none; 
+	margin-top: 30px;
+}
+
+.footer ul li {
+	float:left; 
+	margin-right:30px; 
+	font-size:10px; 
+	line-height:18px;
+	text-align: left;
+}
+
+.footer ul li h2 {
+	margin:0; 
+	padding:0px; 
+	font-size:10px; 
+	color:#6c6c6c; 
+	font-weight:bold; 
+	text-transform:uppercase;
+}
+
+.footer ul li h2 span {
+	color:#c39e5f;
+}
+
+.footer ul li a {
+	color:#000000; 
+	text-decoration:none; 
+	font-weight:500; 
+	margin-left:12px;
+}
+
+.footer ul li a:hover {
+	text-decoration:underline;
+}
+
+.footer p {
+	left:50%; 
+	margin-left:-450px; 
+	position:absolute; 
+	margin-top: 250px; 
+	font-size:12px;
+	text-align: left;
+	color: #6c6c6c;
+}
+
+/* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('../img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('../img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+		
+
+#banner {width:935px; height:316px; position:absolute; left:50%; margin-left:-476px; margin-top:220px;}
+#nav {top:327px; left:0px; z-index:10; position:absolute;}
+#nav a {float:left; width:64px; height:24px; background:url(http://www.guarachevrolet.com.br/img/fundo_nav.png) no-repeat center; text-decoration:none; color:#5f5f5f; font-size:14px; font-family: 'Open Sans', sans-serif; text-align:center; padding-top:3px}
+#nav a.activeLI {font-weight:bold; color:#000; background:url(http://www.guarachevrolet.com.br/img/fundo_nav2.png) no-repeat} 

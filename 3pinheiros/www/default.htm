@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <link type='text/css' rel='stylesheet' href='css/estilo.css' />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,300' rel='stylesheet' type='text/css'>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+
+	<script type="text/javascript">
+		$.fn.cycle.updateActivePagerLink = function(pager, currSlideIndex) { 
+	    $(pager).find('a').removeClass('activeLI') 
+    	    .filter('a:eq('+currSlideIndex+')').addClass('activeLI'); 
+		};
+	</script>
+	<script type="text/javascript">
+  		jQuery(document).ready(function($) {
+		    $(".scroll").click(function(event) {
+		    event.preventDefault();
+		    $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1500);
+		    } );
+			
+			$('.slideshow').cycle({
+			fx: 'fade',
+			pager:  '.nav',
+			pagerAnchorBuilder: function(idx, slide) { 
+       	 	return '<a href="#"></a>'; } 
+			});
+		} );
+	</script>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script type="text/javascript" src="./jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+		// Use jQuery com a variavel $j(...)
+		var $j = jQuery.noConflict();
+		$j(document).ready(function() {
+			$j(".voltarTopo").hide();
+			$j(function () {
+				$j(window).scroll(function () {
+					if ($j(this).scrollTop() > 300) {
+						$j('.voltarTopo').fadeIn();
+					} else {
+					$j('.voltarTopo').fadeOut();
+				}
+			});
+			$j('.voltarTopo').click(function() {
+				$j('body,html').animate({scrollTop:0},600);
+			}); 
+		});});
+	</script>
+
+	<title>Posto e Churrascaria Três Pinheiros</title>
+</head>
+
+<body>
+
+<div class="container">
+	<div class="topo">
+    	<div class="logo"><a href="/"><img src="./img/logo.png"></a></div>
+        <hr />
+        <div class="menu">
+        	<a href="?pag=quem-somos.htm">Quem Somos</a>
+            <a href="?pag=produtos-e-servicos.htm">Produtos e Serviços</a>
+            <a href="?pag=localizacao.htm">Localização</a>
+            <a href="?pag=contato.htm">Contato</a>
+        </div>
+    </div>
+    
+    <div class="banner">
+        <div class="nav"></div>
+        <div class="slideshow">
+        	<a href="#" style="background: url(banners/banner.jpg) no-repeat center; display: block; width: 100%; height:511px"></a>
+            <a href="#" style="background: url(banners/banner.jpg) no-repeat center; display: block; width: 100%; height:511px"></a>
+            <a href="#" style="background: url(banners/banner.jpg) no-repeat center; display: block; width: 100%; height:511px"></a>
+		</div>
+	</div>
+    
+    <div class="informativos">
+    	<div class="infos">
+        	<ul>
+            	<li><img style="width: 241px; height: 241px; padding: 15px;" src="img/info1.jpg"><div class="infos_titulo">Lanchonete</div><div class="intos_texto">Our chefs are ready to offer you the freshest dishes. Many side dishes for our main courses we also cook on the grill.</div><a href="#">Mais</a></li>
+                <li><img style="width: 241px; height: 241px; padding: 15px;" src="img/info2.jpg"><div class="infos_titulo">Loja de Presentes</div><div class="intos_texto">Our chefs are ready to offer you the freshest dishes. Many side dishes for our main courses we also cook on the grill.</div><a href="#">Mais</a></li>
+                <li><img style="width: 241px; height: 241px; padding: 15px;" src="img/info3.jpg"><div class="infos_titulo">Restaurante</div><div class="intos_texto">Our chefs are ready to offer you the freshest dishes. Many side dishes for our main courses we also cook on the grill.</div><a href="#">Mais</a></li>
+				<li><img style="width: 241px; height: 241px; padding: 15px;" src="img/info4.jpg"><div class="infos_titulo">Cafeteria</div><div class="intos_texto">Our chefs are ready to offer you the freshest dishes. Many side dishes for our main courses we also cook on the grill.</div><a href="#">Mais</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="anuncios">
+        	<ul>
+            	<li><img src="img/anuncio1.jpg"></li>
+                <li><img src="img/anuncio2.jpg"></li>
+                <li>Principais Distâncias
+                    <p>Guarapuava: 55 km<br>
+					Foz do Iguaçu: 335 km<br>
+					Curitiba: 300 km<br>
+					São Paulo: 709 km<br></p>
+				</li>
+            </ul>
+    </div>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.356949571407!2d-51.95492448498522!3d-25.45975378377474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef094381500c33%3A0xb02befa7272abef2!2sPosto+e+Churrascaria+Tres+Pinheiros!5e0!3m2!1spt-BR!2sbr!4v1469152242950" width="100%" height="415" frameborder="0" style="padding-top: 55px; border:0" allowfullscreen></iframe>
+    
+    <div class="rodape">
+        Rodovia br 277 km 398 - Candói/Pr. <br>
+        10 km de distância do Pedágio (Sentido Guarapuava à Três Pinheiros)<br>
+        <br>
+        Fone: (42) 3626-2194<br>
+        
+        <div class="redes">
+            <div class="opcao1">
+            	<a href="http://www.facebook.com/melhornegocioconsorcios" target="_blank"></a>
+            </div>
+            <div class="opcao2">
+            	<a href="2" target="_blank"></a>
+            </div>
+            <div class="opcao3">
+            	<a href="3" target="_blank"></a>
+            </div>
+            <div class="opcao4">
+            	<a href="4" target="_blank"></a>
+            </div>
+		</div>
+        
+		<i>©2016. Todos os Direitos Reservados</i>
+	</div>
+
+    <input type="button" class="voltarTopo" onclick="$j('html,body').animate({scrollTop: $j('#voltarTopo').offset().top}, 2000);" alt="Voltar ao topo"value="" >
+
+</div>
+
+</body>
+</html>
