@@ -1,0 +1,5 @@
+* { margin:0px; padding:0px;}
+
+#topo {margin: 0 auto; width: 900px; height:110px; /*border:#FF0000 1px solid;*/ margin-top: 5px; background-image:url(../img/img_topo.jpg); background-repeat:repeat-x;}
+
+#img_topo{ width: 1300px; height:100px; /*border:#FF0000 1px solid;*/ margin:10px 0px 0px 10px; text-align:center; background-image:url(../img/img_logo.png); position:absolute;}

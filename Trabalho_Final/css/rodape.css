@@ -1,0 +1,3 @@
+#rodape { margin: 0 auto; width:900px; height:85px; /*border:#FF0000 1px solid;*/ margin-top:100px; margin-bottom:5px; text-align:center; background-image:url(../img/img_rodape.jpg); background-repeat:repeat-x;}
+
+#rodape h2 { padding-top:25px; color:#FFFFFF;}
